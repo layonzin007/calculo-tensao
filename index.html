@@ -1,1 +1,37 @@
-tees
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Queda de Tensão</title>
+    
+</head>
+<body>
+    <h1>Cálculo de Queda de Tensão</h1>
+
+    <label for="corrente">Corrente (I) em amperes:</label>
+    <input type="number" id="corrente" required><br><br>
+
+    <label for="comprimento">Comprimento do fio (L) em metros:</label>
+    <input type="number" id="comprimento" required><br><br>
+
+    <label for="raio">Raio do fio (r) em metros:</label>
+    <input type="number" id="raio" required><br><br>
+
+    <label for="material">Selecione o material:</label>
+    <select id="material">
+        <option value="cobre" selected>Cobre</option>
+        <option value="aluminio">Alumínio</option>
+        <option value="ferro">Ferro</option>
+        <option value="aco">Aço</option>
+    </select><br><br>
+
+    <button id="calcular">Calcular Queda de Tensão</button>
+
+    <h2>Resultado:</h2>
+    <p id="resultado">A queda de tensão será exibida aqui.</p>
+
+    <p id="erro" style="color: red; display: none;">Por favor, preencha todos os campos corretamente.</p>
+    <script src="script.js"></script>
+</body>
+</html>
